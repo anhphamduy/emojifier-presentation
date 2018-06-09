@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+
+  <!-- SEO -->
+  <title>Emojify</title>
+  <meta name="description" content="Emojify and Recurrent Neural Network">
+  <link rel="icon" href="static/images/logo1.png">
+  <!-- URL CANONICAL -->
+  <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+  <!-- FACEBOOK -->
+  <meta property="og:url" content="http://your-url.com/">
+  <!-- YOUR URL -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="WebSlides — Making HTML Presentations Easy">
+  <!-- EDIT -->
+  <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma.">
+  <!-- EDIT -->
+  <meta property="og:updated_time" content="2017-01-04T17:20:50">
+  <!-- EDIT -->
+  <meta property="og:image" content="static/images/share-webslides.jpg">
+  <!-- EDIT -->
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@webslides">
+  <!-- EDIT -->
+  <meta name="twitter:creator" content="@jlantunez">
+  <!-- EDIT -->
+  <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy">
+  <!-- EDIT -->
+  <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use.">
+  <!-- EDIT -->
+  <meta name="twitter:image" content="static/images/share-webslides.jpg">
+  <!-- EDIT -->
+
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+
+</head>
+
+<body>
+  <header role="banner">
+    <nav role="navigation">
+      <p class="logo">
+        <a href="index.html" title="Emojifier">Emojifier</a>
+      </p>
+      <ul>
+        <li class="github">
+          <a rel="external" href="https://github.com/anhphamduy/emojify" title="Github">
+            <svg class="fa-github">
+              <use xlink:href="#fa-github"></use>
+            </svg>
+            <em>Emojifier</em>
+          </a>
+        </li>
+        <li class="twitter">
+          <a rel="external" href="https://twitter.com/anhphamduy" title="Twitter">
+            <svg class="fa-twitter">
+              <use xlink:href="#fa-twitter"></use>
+            </svg>
+            <em>@anhphamduy</em>
+          </a>
+        </li>
+        <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article id="webslides" class="vertical">
+      <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+
+      <section id="section-1">
+        <span class="background-right-bottom" style="background-image:url('static/images/1.png')"></span>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h1>
+            <strong>Recurrent Neural Networks</strong>
+          </h1>
+          <p class="text-intro">With application in Natural Language Processing
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section id="section-2">
+        <div class="wrap">
+          <h3>Talk structure</h3>
+          <ul class="flexblock steps">
+            <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
+            <li>
+              <span>
+                <svg class="fa-language" viewBox="0 0 512 512">
+                  <use xlink:href="#fa-language"></use>
+                </svg>
+              </span>
+              <h2>01. Natural Language Processing (NLP)</h2>
+              <p>Explain what is NLP where most of RNN models are used in Natural Language Processing.</p>
+            </li>
+            <li>
+              <div class="process step-2"></div>
+              <span>
+                <svg class="fa-laptop" viewBox="0 0 512 512">
+                  <use xlink:href="#fa-laptop"></use>
+                </svg>
+              </span>
+              <h2>02. Recurrent Neural Networks (RNN)</h2>
+              <p>Why prefer using RNN over other models when it comes to NLP?</p>
+            </li>
+            <li>
+              <div class="process step-3"></div>
+              <span>
+                <svg class="fa-smile-o" viewBox="0 0 512 512">
+                  <use xlink:href="#fa-smile-o"></use>
+                </svg>
+              </span>
+              <h2>03. Emojifier</h2>
+              <p>Showing a demo of Emojifier. Go through the code that makes it possible.</p>
+            </li>
+            <li>
+              <div class="process step-4"></div>
+              <span>
+                <svg class="fa-calendar-check-o" viewBox="0 0 512 512">
+                  <use xlink:href="#fa-calendar-check-o"></use>
+                </svg>
+              </span>
+              <h2>04. Current progress of Natural Language Processing</h2>
+              <p>Some of ongoing and potential researches in NLP.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="section-3">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2>
+            <strong>Natural Language Processing (NLP)</strong>
+          </h2>
+          <p class="text-intro">
+            An area of
+            <a href="https://en.wikipedia.org/wiki/Computer_science" title="Landings">Computer Science</a>, and
+            <a href="https://en.wikipedia.org/wiki/Machine_learning" title="Longforms">Machine Learning</a>.
+          </p>
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li>
+                <h2>Give computers the ability to understand human language.</h2>
+                <p>NLP often relates to the interactions between computer and human languages, especially how to program so
+                  that a computer can process and analyze a huge amounts of natural language data.
+                </p>
+              </li>
+              <li>
+                <h2>NLP is every where without our knowing.</h2>
+                <p>
+                  The tools we use nowadays all have suppors from NLP ranging from
+                  <a href="https://en.wikipedia.org/wiki/Speech_recognition">Speech Recognition</a>,
+                  <a href="https://en.wikipedia.org/wiki/Natural_language_understanding">Natural Language Interpretation</a>
+                  to
+                  <a href="https://en.wikipedia.org/wiki/Natural_language_generation">Natural Language Generation</a>.
+                </p>
+              </li>
+              <li>
+                <h2>Why we never hear or misundertanding about NLP before?</h2>
+                <p>Designers, marketers, and journalists can now focus on the content. Simply
+                  <a href="demos/index.html" title="WebSlides Demos">choose a demo</a> and customize it in minutes.</p>
+              </li>
+
+            </ul>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section id="section-4" class="slide-top slide current">
+        <div class="wrap">
+
+          <h4>Recurrent Neural Networks (RNN)</h4>
+          <hr>
+          <div class="aligncenter content-center vertical-align" style="margin-top:20vh;">
+            <h3>Why RNNs are optimized for Natural Language Processing?</h3>
+          </div>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section id="section-5">
+        <div class="wrap slideInRight">
+          <img src="static/images/2.png" class="alignright size-50">
+          <h3>1. Why not a standard network?</h3>
+          <ul>
+            <li>Inputs, outputs can be different lengths in different examples. It is not as if every single example has the
+              same input length and the same output length. One way to solve this is to set a maximum length for a sentence,
+              then pad every input up to that maximum length.
+              <strong>But it is not a good representation.</strong>
+            </li>
+            <li>It does not share features learned accross different position of text so we will lose the semantic meaning of
+              the sentence.</li>
+          </ul>
+        </div>
+      </section>
+      <section id="section-6">
+        <div class="wrap slideInLeft">
+          <img src="static/images/3.png" class="alignleft size-50">
+          <h3>2. Why Recurrent Neural Network come into use?</h3>
+          <p>When progressing through the network, instead of just getting prediction from one current word input, it also gets
+            the input some information from the previous time-step. Or in other words, the activation value from a certain
+            time-step is passed into the next time-step. This keeps going forever without any restrictions in length of the
+            input.
+          </p>
+        </div>
+      </section>
+      <section id="section-7" class="slide-top slide current">
+        <div class="wrap">
+
+          <h4>Recurrent Neural Networks (RNN)</h4>
+          <hr>
+          <h2>Some other advanced models of RNNs</h2>
+
+          <ul class="flexblock border">
+            <li>
+              <!--div required = padding li or li>a-->
+              <div>
+                <h3>
+                  <a target="_blank" href="https://en.wikipedia.org/wiki/Bidirectional_recurrent_neural_networks">Bidrectional recurrent neural networks</a>
+                </h3>
+                <ol>
+                  <li>Operates the same as normal RNNs.</li>
+                  <li>In language translation, we can translate a sentence by looking at the whole sentence, not only the previous
+                    words.
+                  </li>
+                  <li>RNNs only look at all the information that is available in a certain time-step but not the whole.</li>
+                  <li>BRNNs were made to increase the amount of information that the network has.</li>
+                  <li>In other words, it could be a able to see ahead of the sentence.</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <!--div required = padding li or li>a-->
+              <div>
+                <h3>
+                  <a target="_blank" href="https://en.wikipedia.org/wiki/Long_short-term_memory">Long short-term memory networks</a>
+                </h3>
+                <ol>
+                  <li>Operates the same as normal RNNs.</li>
+                  <li>In the real world, a sentence mainly has some pieces that are not important and others are.</li>
+                  <li>We somehow need to find a way for the model to forget the unimportant pieces and just remember those are
+                    vital.
+                  </li>
+                  <li>LSTM solves all the problems we have. We now have the ability to remove the unncessary information from
+                    the model and keep the necessary ones.</li>
+                </ol>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section id="section-8" class="slide current">
+        <div class="wrap">
+          <div class="content-left">
+            <h2>Demo of Emojifier</h2>
+
+            <p style="margin-bottom:5px;">Process Emojifier going through.</p>
+            <ul>
+              <li>Convert sentences to indices based on the location of of each word in the dictionary</li>
+              <li>Get word embedding for each word in the sentence. Computer can't really read words, but only numbers. Word
+                embedding is the representation of a word in a tensor of numbers. If two words have the same meaning, then
+                two tensors perhaps be the same.</li>
+              <li>Get prediction vector.</li>
+              <li>Get the emojis ranking by the probability which that emoji would be apporpriate for that sentence.</li>
+            </ul>
+            <a href="https://anhphamduy.github.io/emojifier/" target="_blank" class="button" title="Button" style="margin-top: 10px;">
+              <svg class="fa-github" viewBox="0 0 512 512">
+                <path d="m475 256c0 48-14 91-41 129-28 38-64 65-109 79-5 1-8 1-11-2-2-2-3-5-3-8l0-61c0-18-5-32-15-40 11-1 20-3 29-5 9-3 18-6 27-11 9-6 17-12 23-19 6-8 11-18 15-30 4-13 6-27 6-43 0-23-8-43-23-59 7-18 7-37-2-59-5-1-13 0-23 4-10 3-19 8-26 12l-11 7c-18-5-36-7-55-7-19 0-37 2-55 7-3-2-7-5-12-8-5-3-13-6-24-11-11-4-19-5-24-4-9 22-9 41-2 59-15 16-23 36-23 59 0 16 2 30 6 42 4 13 9 23 15 30 6 8 14 14 23 20 9 5 18 8 27 11 8 2 18 4 29 5-8 7-12 17-14 29-4 2-8 4-13 5-4 1-10 1-16 1-6 0-13-2-19-6-6-4-11-10-16-18-3-6-8-11-14-15-5-4-10-6-14-7l-5-1c-4 0-7 1-9 2-1 1-2 2-1 3 0 1 1 3 2 4 2 1 3 2 4 3l2 2c4 2 8 5 13 11 4 5 7 10 9 14l2 7c3 7 7 13 13 17 6 5 12 8 19 9 7 1 14 2 20 2 6 0 12 0 16-1l6-1c0 7 0 16 1 25 0 10 0 15 0 16 0 3-2 6-4 8-2 3-6 3-11 2-45-14-81-41-109-79-27-38-41-81-41-129 0-40 9-77 29-110 20-34 46-60 80-80 33-20 70-29 110-29 40 0 77 9 110 29 34 20 60 46 80 80 20 33 29 70 29 110z"></path>
+              </svg>
+              Try on Github
+            </a>
+          </div>
+          <!-- end .content-left -->
+          <div class="content-left">
+            <!-- <div class="embed"> = Responsive -->
+            <div class="embed">
+              <iframe src="https://www.youtube.com/embed/GGgFiteQE7I" allowfullscreen=""></iframe>
+            </div>
+            <!-- end .embed -->
+          </div>
+          <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section id="section-9" class="slide current">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap fadeIn slow">
+          <div class="grid sm">
+            <div class="column">
+              <h3>
+                <strong>Convert sentences to indices.</strong>
+              </h3>
+              <p class="text-intro">Array must be in
+                <code>numpy</code> tensor.</p>
+
+              <p class="text-subtitle">How it works?</p>
+              <ol>
+                <li>Create a tensor with the shape of (# of training examples, maximum length in a sentence)</li>
+                <li>Loop through every single example. Loop through every word on that single example. Set the value of indices
+                  array.
+                </li>
+              </ol>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <!-- dont modify here -->
+              <!-- HTML generated using hilite.me -->
+              <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">sentences_to_indices</span>(X, word_to_index, max_len):
+    <span style="color: #DD4422">&quot;&quot;&quot;</span>
+    <span style="color: #DD4422">    Converts an array of sentences (strings) into an array of indices corresponding to words in the sentences.</span>
+    <span style="color: #DD4422">    The output shape should be such that it can be given to `Embedding()`</span>
+    <span style="color: #DD4422">    </span>
+    <span style="color: #DD4422">    Arguments:</span>
+    <span style="color: #DD4422">    X -- array of sentences (strings), of shape (m, 1)</span>
+    <span style="color: #DD4422">    word_to_index -- a dictionary containing the each word mapped to its index</span>
+    <span style="color: #DD4422">    max_len -- maximum number of words in a sentence.</span>
+    <span style="color: #DD4422">    </span>
+    <span style="color: #DD4422">    Returns:</span>
+    <span style="color: #DD4422">    X_indices -- array of indices corresponding to words in the sentences from X, of shape (m, max_len)</span>
+    <span style="color: #DD4422">    &quot;&quot;&quot;</span>
+        
+        m <span style="color: #333333">=</span> X<span style="color: #333333">.</span>shape[<span style="color: #0000DD; font-weight: bold">0</span>]                                   <span style="color: #888888"># number of training examples</span>
+        <span style="color: #888888"># Initialize X_indices as a numpy matrix of zeros and the correct shape </span>
+        X_indices <span style="color: #333333">=</span> np<span style="color: #333333">.</span>zeros((m, max_len))
+        
+        <span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(m):                               <span style="color: #888888"># loop over training examples</span>
+            
+            <span style="color: #888888"># Convert the ith training sentence in lower case and split is into words. You should get a list of words.</span>
+            sentence_words <span style="color: #333333">=</span> X[i]<span style="color: #333333">.</span>lower()<span style="color: #333333">.</span>split()
+            
+            <span style="color: #888888"># Initialize j to 0</span>
+            j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+            
+            <span style="color: #888888"># Loop over the words of sentence_words</span>
+            <span style="color: #008800; font-weight: bold">for</span> w <span style="color: #000000; font-weight: bold">in</span> sentence_words:
+                <span style="color: #888888"># Set the (i,j)th entry of X_indices to the index of the correct word.</span>
+                X_indices[i, j] <span style="color: #333333">=</span> word_to_index[w]
+                <span style="color: #888888"># Increment j to j + 1</span>
+                j <span style="color: #333333">=</span> j <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>
+        
+        
+        <span style="color: #008800; font-weight: bold">return</span> X_indices
+    </pre>
+
+
+              <!-- dont modfiy -->
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+          <hr>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section id="section-10" class="slide current">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap zoomIn">
+          <div class="grid ms">
+            <div class="column">
+              <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">LSTModel</span>(input_shape, word_to_vec_map, word_to_index):
+
+
+    sentence_indices <span style="color: #333333">=</span> Input(input_shape, dtype<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;int32&quot;</span>)
+
+    embedding_layer <span style="color: #333333">=</span> pretrained_embedding_layer(word_to_vec_map, word_to_index)
+
+
+    embeddings <span style="color: #333333">=</span> embedding_layer(sentence_indices)
+
+
+    X <span style="color: #333333">=</span> LSTM(<span style="color: #0000DD; font-weight: bold">256</span>, return_sequences<span style="color: #333333">=</span><span style="color: #007020">True</span>)(embeddings)
+    X <span style="color: #333333">=</span> Dropout(<span style="color: #6600EE; font-weight: bold">0.5</span>)(X)
+    X <span style="color: #333333">=</span> LSTM(<span style="color: #0000DD; font-weight: bold">256</span>, return_sequences<span style="color: #333333">=</span><span style="color: #007020">False</span>)(X)
+    X <span style="color: #333333">=</span> Dropout(<span style="color: #6600EE; font-weight: bold">0.5</span>)(X)    
+    X <span style="color: #333333">=</span> Dense(NUM_OF_LABELS)(X)
+    X <span style="color: #333333">=</span> Activation(<span style="background-color: #fff0f0">&quot;softmax&quot;</span>)(X)
+
+    model <span style="color: #333333">=</span> Model(inputs<span style="color: #333333">=</span>sentence_indices, outputs<span style="color: #333333">=</span>X)
+
+    <span style="color: #008800; font-weight: bold">return</span> model
+
+model <span style="color: #333333">=</span> EmojiModel((maxLen,), word_to_vec_map, word_to_index)
+model<span style="color: #333333">.</span>compile(loss<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;categorical_crossentropy&#39;</span>, optimizer<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;adam&#39;</span>, metrics<span style="color: #333333">=</span>[<span style="background-color: #fff0f0">&#39;accuracy&#39;</span>])
+model<span style="color: #333333">.</span>fit(X_train_indices, Y_train_oh, epochs <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">120</span>, batch_size <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">32</span>, shuffle<span style="color: #333333">=</span><span style="color: #007020">True</span>)
+
+X_predict_indices <span style="color: #333333">=</span> sentences_to_indices(<span style="background-color: #fff0f0">&quot;I am hungry&quot;</span>, word_to_index, maxLen)
+pred <span style="color: #333333">=</span> model<span style="color: #333333">.</span>predict(X_test_indices)
+</pre>
+
+
+
+              <!-- dont modfiy -->
+            </div>
+            <div class="column">
+              <h3>
+                <strong>Initialize model instance.</strong>
+              </h3>
+              <p class="text-intro">Using
+                <code>Keras</code> library with
+                <code>TensorFlow</code> backend.</p>
+              <p class="text-subtitle">What does it do?</p>
+              <ol>
+                <li>Get pre-trained GloVE embedding layer by Stanford University. Create an embedding layer instance in Keras</li>
+                <li>Create two LSTM layers with two Dropouts in order to prevent overfitting.</li>
+                <li>Create model instance and return at the end of the function.</li>
+                <li>Invoke the function and get model instance then put it in model.</li>
+                <li>Compile the model with log loss function (Cross entropy loss) and Adam optimizer.</li>
+                <li>Train the model</li>
+                <li>Make a prediction</li>
+              </ol>
+            </div>
+            <!-- .end .column -->
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+          <hr>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section id="section-11" class="slide current">
+        <div class="wrap">
+          <h2>Ongoing research in NLP</h2>
+          <hr>
+          <h3>Machine Translation</h3>
+          <p style="margin-bottom: 5px;">Best funded area of NLP.</p>
+          <p style="margin-bottom: 5px;">Still improve models and algorithms.</p>
+          <p style="margin-bottom: 5px;">How to incoporate syntatic structure?</p>
+          <hr>
+          <h3 >Semantic tasks</h3>
+          <p style="margin-bottom: 5px;">Text summarization.</p>
+          <p style="margin-bottom: 5px;">Sentiment analysis: Emojifier.</p>
+          <p style="margin-bottom: 5px;">Information extraction.</p>
+          <hr>
+          <h3>Speech</h3>
+          <p style="margin-bottom: 5px;">Better language moddeling: syntax, symantics.</p>
+          <p style="margin-bottom: 5px;">Better models of acoustics, pronunciation.</p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section id="section-12" class="aligncenter slide current" id="section-40" style="">
+        <h2 class="text-emoji zoomIn">😎</h2>
+        <h3>
+          <strong>Thank you!</strong>
+        </h3>
+        <p>
+          <a href="https://github.com/anhphamduy" title="@anhphamduy on Github">@anhphamduy</a>
+        </p>
+      </section>
+
+
+
+    </article>
+    <!-- end article -->
+  </main>
+  <!-- end main -->
+
+  <!-- A global footer
+
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+  <!-- Required -->
+  <script src="static/js/webslides.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="static/js/svg-icons.js"></script>
+
+</body>
+
+</html>
